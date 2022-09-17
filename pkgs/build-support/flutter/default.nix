@@ -107,7 +107,7 @@ let
       # nuke nondeterminism
 
       # clientId is random
-      remove_line_matching "$RES/.flutter" clientId
+      # remove_line_matching "$RES/.flutter" clientId
 
       # deterministic git repos
       find "$RES" -iname .git -type d | while read -r repoGit; do
