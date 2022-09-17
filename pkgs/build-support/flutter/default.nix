@@ -88,7 +88,7 @@ let
       # so we can use lock, diff yaml
       cp "pubspec.yaml" "$RES"
       cp "pubspec.lock" "$RES"
-      mv .dart_tool .flutter-plugins .flutter-plugins-dependencies .packages "$RES/f"
+      mv .dart_tool .packages "$RES/f"
 
       # replace paths with placeholders
       find "$RES" -type f -exec sed -i \
