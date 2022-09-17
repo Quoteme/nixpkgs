@@ -96,13 +96,13 @@ let
         -e s,${flutter.unwrapped},${placeholder_flutter},g \
         {} +
 
-      remove_line_matching() {
-        replace_line_matching "$1" "$2" ""
-      }
+      # remove_line_matching() {
+      #   replace_line_matching "$1" "$2" ""
+      # }
 
-      replace_line_matching() {
-        sed "s|.*$2.*|$3|g" -r -i "$1"
-      }
+      # replace_line_matching() {
+      #   sed "s|.*$2.*|$3|g" -r -i "$1"
+      # }
 
       # nuke nondeterminism
 
